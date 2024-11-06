@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blog Dashboard 
 
-## Getting Started
+This is a simple Blog Dashboard application built with **Next.js** and **TypeScript**. It allows users to view a list of posts, filter posts by user, view post details, and add or delete comments. The application uses the **JSONPlaceholder API** to fetch mock data.
 
-First, run the development server:
+## Features
+
+- **Posts List Page**
+  - Displays a list of posts fetched from the `/posts` endpoint of the JSONPlaceholder API.
+  - Each post is shown in a card format with:
+    - Post title
+    - Post body (truncated to 100 characters)
+    - Author’s name
+  - Includes a "View Details" link to view the full post.
+
+- **Post Detail Page**
+  - Displays the full post title and body, along with the author's name.
+  - Displays a list of comments for the post, showing the commenter name and comment body.
+  - A form to add a new comment is available, and comments are added to the list upon submission.
+  - Simulates deleting a comment by removing it from the displayed list (without making an API request).
+
+- **Filter by User**
+  - A dropdown to filter posts by author.
+  - Fetches and displays a list of users from the `/users` endpoint of the JSONPlaceholder API.
+
+- **Responsive Design**
+  - The application is responsive, ensuring it looks good on both desktop and mobile screens.
+
+- **Bonus (Optional)**
+  - **Loading and Error Handling**: Displays a loading indicator while data is being fetched and handles API request errors.
+  - **Pagination**: Implements pagination to limit the number of posts displayed per page.
+
+## Technologies Used
+
+- **Next.js**: A React framework for server-rendered applications.
+- **TypeScript**: A superset of JavaScript that adds static types.
+- **JSONPlaceholder API**: A free online REST API that provides mock data for posts, users, and comments.
+- **Vercel**: The application is deployed on Vercel for easy hosting and scalability.
+
+## Setup and Installation
+
+To get started with this project locally, follow these steps:
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/umeshyadav7988/blog-dashboard.git
+```
+
+### 2. Navigate to the project folder:
+
+```bash
+cd blog-dashboard
+```
+
+### 3. Install dependencies:
+
+Make sure you have **Node.js** and **npm** installed. Then, run the following command to install the necessary dependencies:
+
+```bash
+npm install
+```
+
+or if you're using **Yarn**:
+
+```bash
+yarn install
+```
+
+### 4. Run the development server:
+
+To start the development server, run the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or with **Yarn**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app will be running on [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+### 5. Build and deploy the app (Optional):
 
-To learn more about Next.js, take a look at the following resources:
+To create a production build, run the following:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then, to start the production server:
 
-## Deploy on Vercel
+```bash
+npm run start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 6. Deployment on Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is deployed on Vercel. You can access the live application at:
+
+[https://blog-dashboard-jlis-36hcgio96-umeshs-projects-defe119c.vercel.app](https://blog-dashboard-jlis-36hcgio96-umeshs-projects-defe119c.vercel.app)
+
+
+
+## Contribution
+
+Feel free to open issues and submit pull requests if you want to contribute to this project. Please follow the standard GitHub workflows for contributing.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+```
+
+### Key Details:
+1. **Installation & Setup**: 
+   - Clone the repository and install dependencies.
+   - Run the application locally using `npm run dev` or `yarn dev`.
+   - Build and start the production version if needed.
+
+2. **Deployment**: 
+   - You can deploy the project to Vercel. Update the deployment link in the `README.md` after deployment.
+
+3. **Screenshots**: 
+   - Add actual screenshots in the `screenshots` folder and update the paths in the `README.md`.
+
+4. **Features**: 
+   - The app includes multiple features, from displaying posts to adding and deleting comments.
+   - It also handles user filtering and pagination.
+
+5. **Contribution**:
+   - Open to contributions, issues, and pull requests from other developers.
+
+Now you have a complete `README.md` with detailed instructions on how to set up, run, and deploy your Blog Dashboard application, as well as how to contribute to the project.
