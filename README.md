@@ -108,28 +108,3 @@ This project is deployed on Vercel. You can access the live application at:
 
 Feel free to open issues and submit pull requests if you want to contribute to this project. Please follow the standard GitHub workflows for contributing.
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
-```
-
-### Key Details:
-1. **Installation & Setup**: 
-   - Clone the repository and install dependencies.
-   - Run the application locally using `npm run dev` or `yarn dev`.
-   - Build and start the production version if needed.
-
-2. **Deployment**: 
-   - You can deploy the project to Vercel. Update the deployment link in the `README.md` after deployment.
-
-3. **Screenshots**: 
-   - Add actual screenshots in the `screenshots` folder and update the paths in the `README.md`.
-
-4. **Features**: 
-   - The app includes multiple features, from displaying posts to adding and deleting comments.
-   - It also handles user filtering and pagination.
-
-5. **Contribution**:
-   - Open to contributions, issues, and pull requests from other developers.
-
-Now you have a complete `README.md` with detailed instructions on how to set up, run, and deploy your Blog Dashboard application, as well as how to contribute to the project.
